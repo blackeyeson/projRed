@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004DF553289EBA5D009F7654 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004DF552289EBA5D009F7654 /* MainScreenViewController.swift */; };
+		004DF556289EC075009F7654 /* CustomCells in Resources */ = {isa = PBXBuildFile; fileRef = 004DF555289EC075009F7654 /* CustomCells */; };
+		004DF559289EC2C0009F7654 /* TableViewCellType1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004DF557289EC2C0009F7654 /* TableViewCellType1.swift */; };
+		004DF55A289EC2C0009F7654 /* TableViewCellType1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004DF558289EC2C0009F7654 /* TableViewCellType1.xib */; };
+		008FB627289F10A60091FCAE /* RightSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FB626289F10A60091FCAE /* RightSideMenuViewController.swift */; };
+		008FB629289F1F200091FCAE /* LeftSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FB628289F1F200091FCAE /* LeftSideMenuViewController.swift */; };
+		008FB62B289F206A0091FCAE /* GreetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FB62A289F206A0091FCAE /* GreetViewController.swift */; };
+		008FB62D289F2DEB0091FCAE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008FB62C289F2DEB0091FCAE /* LoginViewController.swift */; };
 		0825A30B2899E6E600231C6B /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 0825A30A2899E6E400231C6B /* Models */; };
 		0825A30D2899E70600231C6B /* Services in Resources */ = {isa = PBXBuildFile; fileRef = 0825A30C2899E70400231C6B /* Services */; };
 		0825A30F2899E71E00231C6B /* Workers in Resources */ = {isa = PBXBuildFile; fileRef = 0825A30E2899E71C00231C6B /* Workers */; };
@@ -20,6 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		004DF552289EBA5D009F7654 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		004DF555289EC075009F7654 /* CustomCells */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CustomCells; sourceTree = "<group>"; };
+		004DF557289EC2C0009F7654 /* TableViewCellType1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewCellType1.swift; path = CustomCells/TableViewCellType1.swift; sourceTree = "<group>"; };
+		004DF558289EC2C0009F7654 /* TableViewCellType1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TableViewCellType1.xib; path = CustomCells/TableViewCellType1.xib; sourceTree = "<group>"; };
+		008FB626289F10A60091FCAE /* RightSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideMenuViewController.swift; sourceTree = "<group>"; };
+		008FB628289F1F200091FCAE /* LeftSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuViewController.swift; sourceTree = "<group>"; };
+		008FB62A289F206A0091FCAE /* GreetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetViewController.swift; sourceTree = "<group>"; };
+		008FB62C289F2DEB0091FCAE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0825A30A2899E6E400231C6B /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
 		0825A30C2899E70400231C6B /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
 		0825A30E2899E71C00231C6B /* Workers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Workers; sourceTree = "<group>"; };
@@ -45,6 +61,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004DF554289EBA70009F7654 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				004DF552289EBA5D009F7654 /* MainScreenViewController.swift */,
+				008FB626289F10A60091FCAE /* RightSideMenuViewController.swift */,
+				008FB628289F1F200091FCAE /* LeftSideMenuViewController.swift */,
+				008FB62A289F206A0091FCAE /* GreetViewController.swift */,
+				008FB62C289F2DEB0091FCAE /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		08E5A6A728980EE0003D5EBD = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +96,8 @@
 				0825A30C2899E70400231C6B /* Services */,
 				0825A30E2899E71C00231C6B /* Workers */,
 				0825A3102899E73400231C6B /* Scenes */,
+				004DF555289EC075009F7654 /* CustomCells */,
+				004DF554289EBA70009F7654 /* ViewControllers */,
 				08E5A6B328980EE4003D5EBD /* AppDelegate.swift */,
 				08E5A6B528980EE4003D5EBD /* SceneDelegate.swift */,
 				08E5A6B928980EE4003D5EBD /* Main.storyboard */,
@@ -75,6 +105,8 @@
 				08E5A6BC28980F17003D5EBD /* Assets.xcassets */,
 				08E5A6BE28980F18003D5EBD /* LaunchScreen.storyboard */,
 				08E5A6C128980F18003D5EBD /* Info.plist */,
+				004DF557289EC2C0009F7654 /* TableViewCellType1.swift */,
+				004DF558289EC2C0009F7654 /* TableViewCellType1.xib */,
 			);
 			path = projRed;
 			sourceTree = "<group>";
@@ -138,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0825A3112899E73600231C6B /* Scenes in Resources */,
+				004DF556289EC075009F7654 /* CustomCells in Resources */,
+				004DF55A289EC2C0009F7654 /* TableViewCellType1.xib in Resources */,
 				0825A30F2899E71E00231C6B /* Workers in Resources */,
 				0825A30D2899E70600231C6B /* Services in Resources */,
 				08E5A6C028980F18003D5EBD /* LaunchScreen.storyboard in Resources */,
@@ -154,9 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008FB62D289F2DEB0091FCAE /* LoginViewController.swift in Sources */,
 				0825A3142899E76B00231C6B /* projRed.xcdatamodeld in Sources */,
+				008FB627289F10A60091FCAE /* RightSideMenuViewController.swift in Sources */,
+				008FB62B289F206A0091FCAE /* GreetViewController.swift in Sources */,
+				004DF553289EBA5D009F7654 /* MainScreenViewController.swift in Sources */,
 				08E5A6B428980EE4003D5EBD /* AppDelegate.swift in Sources */,
+				004DF559289EC2C0009F7654 /* TableViewCellType1.swift in Sources */,
 				08E5A6B628980EE4003D5EBD /* SceneDelegate.swift in Sources */,
+				008FB629289F1F200091FCAE /* LeftSideMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
