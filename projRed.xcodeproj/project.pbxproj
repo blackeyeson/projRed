@@ -25,6 +25,7 @@
 		08E5A6BB28980EE4003D5EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E5A6B928980EE4003D5EBD /* Main.storyboard */; };
 		08E5A6BD28980F17003D5EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E5A6BC28980F17003D5EBD /* Assets.xcassets */; };
 		08E5A6C028980F18003D5EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E5A6BE28980F18003D5EBD /* LaunchScreen.storyboard */; };
+		E7212CEBB7DF5F3D3FE76D2D /* Pods_projRed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8220C18760C268D9B56483 /* Pods_projRed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,9 @@
 		08E5A6BC28980F17003D5EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08E5A6BF28980F18003D5EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08E5A6C128980F18003D5EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A1805E5C8D4F68CE212B03 /* Pods-projRed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projRed.debug.xcconfig"; path = "Target Support Files/Pods-projRed/Pods-projRed.debug.xcconfig"; sourceTree = "<group>"; };
+		600C18B0BE6AB0DE1F08069A /* Pods-projRed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projRed.release.xcconfig"; path = "Target Support Files/Pods-projRed/Pods-projRed.release.xcconfig"; sourceTree = "<group>"; };
+		6B8220C18760C268D9B56483 /* Pods_projRed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projRed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7212CEBB7DF5F3D3FE76D2D /* Pods_projRed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,8 @@
 			children = (
 				08E5A6B228980EE3003D5EBD /* projRed */,
 				08E5A6B128980EE3003D5EBD /* Products */,
+				F9900DD16F61385F60AF3933 /* Pods */,
+				C8662FF4424C7A3F2D67D8A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +118,24 @@
 			path = projRed;
 			sourceTree = "<group>";
 		};
+		C8662FF4424C7A3F2D67D8A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B8220C18760C268D9B56483 /* Pods_projRed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9900DD16F61385F60AF3933 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32A1805E5C8D4F68CE212B03 /* Pods-projRed.debug.xcconfig */,
+				600C18B0BE6AB0DE1F08069A /* Pods-projRed.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08E5A6C428980F18003D5EBD /* Build configuration list for PBXNativeTarget "projRed" */;
 			buildPhases = (
+				1C9B54E6C1FB9B93D34ABEE0 /* [CP] Check Pods Manifest.lock */,
 				08E5A6AC28980EE2003D5EBD /* Sources */,
 				08E5A6AD28980EE2003D5EBD /* Frameworks */,
 				08E5A6AE28980EE2003D5EBD /* Resources */,
+				8EDF7F43D0105C8B6D2D623E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +209,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C9B54E6C1FB9B93D34ABEE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-projRed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EDF7F43D0105C8B6D2D623E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-projRed/Pods-projRed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-projRed/Pods-projRed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-projRed/Pods-projRed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08E5A6AC28980EE2003D5EBD /* Sources */ = {
@@ -338,6 +407,7 @@
 		};
 		08E5A6C528980F18003D5EBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A1805E5C8D4F68CE212B03 /* Pods-projRed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -366,6 +436,7 @@
 		};
 		08E5A6C628980F18003D5EBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 600C18B0BE6AB0DE1F08069A /* Pods-projRed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
